@@ -1,0 +1,367 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+.active a {
+    background-color: rgb(26, 202, 255);
+    border-radius: 15px;
+    color: red;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: rgb(233, 233, 233);
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    border: 0;
+    background: #dedede;
+    height: 2px;
+}
+
+header img {
+    margin-top: 0px;
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    text-align: center;
+    color: rgb(20, 118, 120);
+}
+
+.wrap {
+    width: 950px;
+    margin: 25px auto;
+}
+
+nav.menu ul {
+    overflow: hidden;
+    color: #fff;
+    list-style: none;
+    padding: 0px;
+    width: 650px;
+    margin: 0 0 0;
+    background: rgb(73, 151, 187);
+    border-radius: 15px;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav.menu ul li {
+    margin: 15px;
+    flex: 1;
+}
+
+nav.menu ul a {
+    padding: 10px;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.active a {
+    color: red;
+}
+
+nav.menu ul a:hover {
+    text-decoration: underline;
+    border-radius: 15px;
+    background: #fff;
+    color: rgb(2, 210, 150);
+}
+
+nav.menu ul a:active {
+    color: red;
+}
+
+.sidebar {
+    float: right;
+    width: 275px;
+}
+
+.widget-pict {
+    border-radius: 8px;
+}
+
+.sidebar .widget {
+    padding: 25px;
+    margin: 0 0 25px;
+    background: #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+    border: 1px solid rgba(10, 128, 238, 0.55);
+    box-shadow: 5px 5px 5px 0px rgba(148, 137, 137, 0.55);
+}
+
+.sidebar .widget:hover {
+    border-bottom: 4px solid #3498db;
+    box-shadow: 5px 5px 5px 0px rgba(148, 137, 137, 0.55);
+}
+
+.sidebar .widget h2 {
+    padding: 0;
+    margin: 0 0 15px;
+    color: #3498db;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.sidebar .widget p {
+    font-size: 14px;
+}
+
+.sidebar .widget p:last-child {
+    margin: 0;
+}
+
+.blog {
+    float: left; 
+}
+
+.widget .faq-selengkapnya {
+    color: #000;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.faq-selengkapnya:hover {
+    margin-left: 10px;
+}
+
+.conteudo {
+    width: 600px;
+    padding: 25px;
+    margin: 25px auto;
+    background: #fff;
+    transition: all 0.5s ease;
+    border: 1px solid #dedede;
+    box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.35);
+    border-radius: 15px 25px;
+    background-color: rgb(240, 240, 240);
+}
+
+.conteudo img {
+    min-width: 650px;
+    margin: 0 0 25px -25px;
+    max-width: 650px;
+}
+
+.conteudo h1 {
+    padding: 0;
+    margin: 0 0 15px;
+    font-weight: normal;
+    color: #666;
+    font-family: Georgia;
+}
+
+.conteudo p:last-child {
+    margin: 0;
+}
+
+.conteudo .continue-lendo {
+    color: #000;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.conteudo .continue-lendo:hover {
+    margin-left: 0;
+}
+
+.post-info {
+    float: right;
+    font-size: 12px
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #00a0df;
+    padding: 60px 10%;
+}
+
+ul {
+    list-style: none;
+    padding: 0; 
+}
+
+.footer-col {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.footer-col:last-child {
+    margin-right: 0; 
+}
+
+.footer-col h4 {
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #f1bc0d;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #27c0ac;
+    height: 1px;
+    width: 30px;
+}
+
+ul li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+ul li a {
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #bdb6b6;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover {
+    color: white;
+    padding-left: 2px;
+}
+
+.links {
+    display: flex; 
+}
+
+.links a {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin-right: 8px; 
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:last-child {
+    margin-right: 0; 
+}
+
+.links a:hover {
+    color: #4d4f55;
+    background-color: white;
+}
+
+
+/*Responsive */
+@media screen and (max-width: 460px) {
+    .header {
+        position: inherit;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .footer-col {
+        width: 100%;
+    }
+    .footer-col .links {
+        position: relative;;
+    }
+    #imagelogo {
+        position: relative;
+        top: -100px;
+        left: -30px;
+    }
+}
+
+
+    @media (max-width: 700px){
+    .header {
+        position: inherit;
+        width: 50%;
+    }
+    .sidebar {
+        width: 45%;
+    }
+    
+    .footer-col {
+        width: 45%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:960px) {
+
+    .header {
+        position: inherit;
+    }
+    .wrap {
+        width: 90%;
+        margin: 25px auto;
+    }
+    .sidebar {
+        width: 100%;
+        margin: 25px 0 0;
+        float:right ;
+    }
+    .sidebar .widget {
+        padding: 5%;
+    }
+    nav.menu ul {
+        width: 100%;
+    }
+    nav.menu ul {
+        float: inherit;
+    }
+    nav.menu ul li {
+        float: inherit;
+        margin: 0;
+    }
+    nav.menu ul a {
+        padding: 15px;
+        font-size: 16px;
+        border-top: 1px solid #1abf9f;
+        border-bottom: 1px solid #16a085;
+    }
+    .blog {
+        width: 90%;
+    }
+    .conteudo {
+        float: inherit;
+        margin: 0 auto 25px;
+        width: 101%;
+        border: 1px solid#dedede;
+        padding: 5%;
+        background: #fff;
+    }
+    .conteudo img {
+        max-width: 110%;
+         margin: 0 0 25px -5%;
+         min-width: 110%;
+    }
+    .conteudo .continue-lendo:hover{
+        margin-left:0;
+    }
+}
